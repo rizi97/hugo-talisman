@@ -1,0 +1,34 @@
+baseURL = '/'
+languageCode = 'en'
+title = 'Talisman'
+
+[menu]
+[[menu.main_menu]]
+  identifier = 'home'
+  name = 'Home'
+  url = '/'
+  weight = '1'
+[[menu.main_menu]]
+  identifier = 'about'
+  name = 'About'
+  url = '/about'
+  weight = '2'
+[[menu.main_menu]]
+  identifier = 'resources'
+  name = 'Resources'
+  url = '/resources'
+  weight = '3'
+[[menu.main_menu]]
+  identifier = 'sample-use'
+  name = 'Sample Use'
+  url = '/sample-use'
+  weight = '4'
+[[menu.main_menu]]
+  identifier = 'contact'
+  name = 'Contact'
+  url = '/contact'
+  weight = '5'
+
+
+[Params]
+siteLogo = "/assets/images/logo.png"
