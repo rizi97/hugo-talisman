@@ -11,10 +11,10 @@ It's simple textual business site.
 
 ## Installation
 
-1. git clone "https://github.com/rizi97/talisman-hugo.git"
+1. git clone https://github.com/rizi97/talisman-hugo.git
 2. cd talisman-hugo
 3. hugo server
-4. Website will run on this URL: localhost:1313/talisman-hugo
+4. Website will run on this [URL](localhost:1313/talisman-hugo).
 
 ## Contact
 
