@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Talisman</title>
+    <link>https://rizi97.github.io/talisman-hugo/</link>
+    <description>Recent content in Home on Talisman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://rizi97.github.io/talisman-hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>https://rizi97.github.io/talisman-hugo/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rizi97.github.io/talisman-hugo/contact/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>https://rizi97.github.io/talisman-hugo/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rizi97.github.io/talisman-hugo/resources/</guid>
+      <description>Overview Here, we provide an overview of the various techniques that constitute the Talisman approach., including pre-session and in-session activities making use of participants’ materials. While we provide suggestions for use, communities can pick and choose which techniques to use in their process, as well as modify the techniques based on their design goals.
+Prompt The Talisman prompt is a customizable brief that lends itself to the design topic at hand and supports participants to choose the personal objects they want to bring in.</description>
+    </item>
+    
+    <item>
+      <title>Sample Use</title>
+      <link>https://rizi97.github.io/talisman-hugo/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rizi97.github.io/talisman-hugo/about/</guid>
+      <description>What is the purpose of this toolkit? This toolkit offers a complete guide to Talisman, an innovative approach to co-design with participants’ own objects. This toolkit provides suggestions for pre-session and in-session design activities that make use of participants’ materials. It specs out what the overall process might look like; walks through examples of sequential design activities and pre-session activities; and makes note of key things to consider while facilitating the co-design sessions using participants’ materials.</description>
+    </item>
+    
+    <item>
+      <title>Sample Use</title>
+      <link>https://rizi97.github.io/talisman-hugo/sample-use/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rizi97.github.io/talisman-hugo/sample-use/</guid>
+      <description>Case Study: Co-Designing Safe Spaces with Underrepresented Youth in STEM Thus far, at least five communities have used the Talisman approach in their co-design workshops and practice. These include STEM education-focused nonprofits, university faculty projects, and well as youth design groups based in the United States and India. Here, we give a preview of findings from just one workshop where Talisman was used by a community.
+In this co-design workshop, we partnered up with a nonprofit in Chicago and 9 Black teens and young adults to co-design safe spaces, specifically a kickback event for the broader Chicago community.</description>
+    </item>
+    
+  </channel>
+</rss>
