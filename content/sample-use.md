@@ -15,7 +15,7 @@ In this co-design workshop, we partnered up with a nonprofit in Chicago and 9 Bl
 On the whiteboard, you can see the range of personal objects the participants brought in (Choose), the connections participants drew among their objects (Connect), as well as key considerations participants came up with when creating a safe space (Consider). 
 
 
-###### ![](/assets/images/sample.jpg)
+###### ![](https://rizi97.github.io/talisman-hugo/assets/images/sample.jpg)
 
 
 If you are interested, you can find a short summary of the workshop in the following video and more details in the longer paper in [Further Reading](/resources).
