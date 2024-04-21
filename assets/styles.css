@@ -7,6 +7,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html,body {
+  scroll-padding-top: 14rem;
+}
+
 body {
   margin: 0;
   font-family: "Inter", sans-serif !important;
