@@ -3,32 +3,32 @@
    <div>
       <div class="flex justify-between pb3" id="custom_navigation">
          <a href="{{.Site.BaseURL}}">
-          <img src="{{site.Params.siteLogo}}" class="header-logo" />
+            <img src="{{site.Params.siteLogo}}" class="header-logo" />
          </a>
-       <nav>
-         <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-         <ul class="nav-list">
-            {{ range .Site.Menus.main_menu }}
+         <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+               {{ range .Site.Menus.main_menu }}
                <li class="{{ if eq .Identifier $.Page.Params.menu.main_menu.identifier }} active{{ end }}">
                   <a href="{{ .URL }} ">{{ .Name }}</a>
                   {{ if .HasChildren }}
-                     <ul class="nav-dropdown">
-                        {{ range .Children }}
-                           <li>
-                              <a href="{{ .URL }}">{{ .Name }}</a>
-                           </li>
-                        {{ end }}
-                     </ul>
+                  <ul class="nav-dropdown">
+                     {{ range .Children }}
+                     <li>
+                        <a href="{{ .URL }}">{{ .Name }}</a>
+                     </li>
+                     {{ end }}
+                  </ul>
                   {{ end }}
                </li>
-            {{ end }}
-         </ul>
-       </nav>
+               {{ end }}
+            </ul>
+         </nav>
       </div>
 
-      {{ if eq $.Page.Params.menu.main_menu.identifier "home" }} 
-         {{ partial "hero-banner" . }}
+      {{ if eq $.Page.Params.menu.main_menu.identifier "home" }}
+      {{ partial "hero-banner" . }}
       {{ end }}
-      
+
    </div>
 </header>
