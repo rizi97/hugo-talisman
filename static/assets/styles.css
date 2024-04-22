@@ -7,7 +7,8 @@ html {
   scroll-behavior: smooth;
 }
 
-html,body {
+html,
+body {
   scroll-padding-top: 10rem;
 }
 
@@ -9003,7 +9004,7 @@ code {
 
   .f-5-l,
   .f-subheadline-l {
-    font-size: 5rem
+    font-size: 4rem
   }
 
   .f1-l {
@@ -9222,15 +9223,13 @@ pre {
   background-size: cover;
 }
 
-img.header-logo {
-  position: absolute;
-  top: -10px;
+a.header-logo {
   width: 15%;
 }
 
 .default-page h1 {
   color: #F7A21D;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.25;
 }
 
@@ -9238,7 +9237,7 @@ img.header-logo {
 .default-page li {
   font-weight: 400;
   color: #5A5A5A;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -9257,13 +9256,13 @@ img.header-logo {
   text-align: center;
 }
 
-
-
-
-nav {
-  float: right;
-  margin: 15px 25px 0 0;
+.default-page h6#assetsimagessamplejpg {
+  width: 65%;
+  margin: 0 auto;
 }
+
+
+
 
 nav ul {
   list-style: none;
@@ -9340,16 +9339,12 @@ nav ul li ul li:last-child a {
   width: 50px;
 }
 
-#custom_navigation li.active a {
+#custom_navigation li.active>a {
   text-decoration: underline;
 }
 
 @media only screen and (max-width: 798px) {
-  header .pb3 {
-    padding-bottom: 0;
-  }
-
-  img.header-logo {
+  a.header-logo {
     width: 50%;
     top: 10px;
   }
@@ -9360,7 +9355,7 @@ nav ul li ul li:last-child a {
 
   nav {
     width: 100%;
-    padding: 70px 0 15px;
+    padding: 0 0 15px;
     margin: 0
   }
 
@@ -9437,4 +9432,33 @@ nav ul li ul li:last-child a {
 
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
+}
+
+
+@media only screen and (max-width: 798px) {
+  header .pa5 {
+    padding: 1rem 2rem;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .nav-mobile {
+    top: 0;
+  }
+
+  #nav-toggle {
+    top: 5px;
+  }
+
+  .nav-list {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+  }
+
+  main .w-75-ns {
+    width: 90%;
+  }
 }

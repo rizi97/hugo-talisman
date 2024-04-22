@@ -1,4 +1,4 @@
-baseURL = 'https://rizi97.github.io/talisman-hugo/'
+baseURL = '/'
 languageCode = 'en'
 title = 'Talisman'
 
@@ -68,6 +68,11 @@ title = 'Talisman'
     name = "Padlet Template"
     url = '/resources/#padlet-template'
     weight = '4'
+  [[menu.main_menu]]
+    parent = 'resources'
+    name = "Further Reading"
+    url = '/resources/#further-reading'
+    weight = '5'
 [[menu.main_menu]]
   identifier = 'sample-use'
   name = 'Sample Use'
