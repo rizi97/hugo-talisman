@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rizi97.github.io/talisman-hugo/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>https://rizi97.github.io/talisman-hugo/contact/</loc>
+    <loc>/contact/</loc>
   </url><url>
-    <loc>https://rizi97.github.io/talisman-hugo/</loc>
+    <loc>/</loc>
   </url><url>
-    <loc>https://rizi97.github.io/talisman-hugo/resources/</loc>
+    <loc>/resources/</loc>
   </url><url>
-    <loc>https://rizi97.github.io/talisman-hugo/about/</loc>
+    <loc>/about/</loc>
   </url><url>
-    <loc>https://rizi97.github.io/talisman-hugo/sample-use/</loc>
+    <loc>/sample-use/</loc>
   </url><url>
-    <loc>https://rizi97.github.io/talisman-hugo/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
