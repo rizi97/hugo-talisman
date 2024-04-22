@@ -1,4 +1,4 @@
-baseURL = 'https://rizi97.github.io/talisman-hugo/'
+baseURL = '/'
 languageCode = 'en'
 title = 'Talisman'
 
