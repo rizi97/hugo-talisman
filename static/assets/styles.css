@@ -9256,7 +9256,7 @@ a.header-logo {
   text-align: center;
 }
 
-.default-page h6#assetsimagessamplejpg {
+.default-page h6 img {
   width: 65%;
   margin: 0 auto;
 }
@@ -9460,5 +9460,38 @@ nav ul li ul li:last-child a {
 
   main .w-75-ns {
     width: 90%;
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+  main .w-75-ns {
+    width: 90%;
+  }
+
+  .overview .flex-row-ns {
+    flex-direction: column;
+  }
+  .overview article > div {
+    padding: 0;
+  }
+  .overview .w-60-ns, 
+  .overview .w-30-ns {
+    width: 100%
+  }
+  .overview .images_wrap {
+    display: flex;
+  }
+  .overview .images_wrap img {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .overview .images_wrap {
+    display: block;
+  }
+  .overview .images_wrap img {
+    width: 100%;
   }
 }

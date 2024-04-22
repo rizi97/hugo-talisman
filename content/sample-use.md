@@ -18,7 +18,7 @@ On the whiteboard, you can see the range of personal objects the participants br
 ###### ![](https://rizi97.github.io/talisman-hugo/assets/images/sample.jpg)
 
 
-If you are interested, you can find a short summary of the workshop in the following video and more details in the longer paper in [Further Reading](/resources/#further-reading).
+If you are interested, you can find a short summary of the workshop in the following video and more details in the longer paper in [Further Reading](https://rizi97.github.io/talisman-hugo/resources/#further-reading).
 
 
 {{< embeded src="https://www.youtube.com/embed/oDBwO9dm9Bc?si=CQjPfKUXkgs2IARN" w="65%" h="450px" >}}
