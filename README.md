@@ -2,19 +2,12 @@
 
 It's simple textual business site.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Installation
 
 1. git clone https://github.com/rizi97/talisman-hugo.git
 2. cd hugo-talisman
 3. hugo server
-4. Website will run on this [URL](https://github.com/rizi97/hugo-talisman.git).
+4. Website will run on this [URL](https://rizi97.github.io/hugo-talisman).
 
 ## Contact
 
