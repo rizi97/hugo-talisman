@@ -11,22 +11,28 @@
       {{ .Site.Title }} | {{ if .Page.Title }}{{ .Page.Title }}{{ end }}
    </title>
 
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+   <!-- <link rel="icon" type="image/x-icon" href="{{site.Params.siteLogo}}"> -->
 
-   <link rel="icon" type="image/x-icon" href="https://rizi97.github.io/hugo-talisman/assets/images/favicon.png">
+   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="/assets/css/maincd1e.css" />
 
-   <link rel="stylesheet" href="https://rizi97.github.io/hugo-talisman/assets/styles.css">
+   <link rel="stylesheet" href="/assets/css/blog0a6d.css" />
 
 </head>
 
-<body id="body">
-   {{ partial "header.html" . }}
-   {{ block "main" . }}
-   {{ end }}
+<body class="blog blogpost">
+   <div itemid="https://mailmeteor.com/blog/" itemscope itemtype="https://schema.org/Blog">
+      {{ partial "header.html" . }}
+
+      {{ block "main" . }}
+      {{ end }}
+   </div>
+
    {{ partial "footer.html" . }}
 
-   <script src="https://rizi97.github.io/hugo-talisman/assets/script.js"></script>
+   <script src="/assets/js/jquery.min.js"></script>
+   <script src="/assets/js/popper.min.js"></script>
+   <script src="/assets/js/bootstrap.min.js"></script>
 </body>
+
 </html>

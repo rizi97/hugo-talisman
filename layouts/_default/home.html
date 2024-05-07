@@ -1,147 +1,75 @@
 {{ define "main" }}
 
-<main class="mt4">
-    <div class="pa3 pa4-ns w-100 w-75-ns center">
-        <h1 class="flex-none orange fw7">
-            Overview
-        </h1>
-        <section class="w-100 overview">
-            <div class="relative w-100 mb4">
-                <article class="b--black-10">
-                    <div class="db ph3 ph0-l no-underline dark-gray">
-                        <div class="flex flex-column justify-between flex-row-ns">
-                            <div class="blah w-100 w-60-ns">
-                                <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-                                    <p>Co-design is an approach to designing artifacts and experiences that reflect the
-                                        lived experiences, practices, and goals of participants through their inclusion
-                                        and
-                                        active participation throughout the design process. <span class="orange fw7">One
-                                            recurring problem in
-                                            co-design, however, is that traditionally participants have little to no say
-                                            over
-                                            the materials they use while designing.</span> </p>
-                                    <p>Often, these materials (e.g.,
-                                        markers,
-                                        colored sticky notes, tablets, microcontrollers, etc.) are imposed on
-                                        participants,
-                                        which may not be relevant or useful to their goals or contexts. Past research
-                                        has
-                                        also shown how participants may sometimes prefer to draw on their own tangible
-                                        or
-                                        intangible materials in co-design. Given the important role that materials play
-                                        in
-                                        co-design, <span class="orange fw7">what happens when we shift control of design
-                                            materials to participants?</span></p>
-                                </div>
-                            </div>
+<main class="container">
+    <div class="blog-grid mt-5">
 
-                            <div class="pr3-ns mb4 mb0-ns w-100 w-30-ns images_wrap">
-                                <img src="https://rizi97.github.io/hugo-talisman/assets/images/Markers.jpg" class="img"
-                                    alt="overview">
-                                <img src="https://rizi97.github.io/hugo-talisman/assets/images/Arduino.jpg" class="img"
-                                    alt="overview">
-                            </div>
-                        </div>
-                    </div>
-                </article>
+        {{ $blogSection := .Site.GetPage "section" "blog" }}
+        {{ $allPosts := $blogSection.RegularPages }}
+        {{ $offset := 2 }}
+
+        {{ range $index, $post := $allPosts }}
+        {{ if ge $index $offset }}
+            
+            <div class="blog-grid-cards d-flex flex-column">
+                <div class="blogpost-card-top">
+                    <a href="{{ .Permalink }}"><img class="blogpost-card-img-top" loading="lazy"
+                            src="{{ .Params.thumbnail }}"
+                            alt="{{ .Title }}" /></a>
+                </div>
+
+                <div class="blog-grid-cards-header">
+                    <span class="text-neutral-6 mr-auto">{{ dateFormat "January 2, 2006" .Date }}</span>
+                    <a href="{{ .Permalink }}" class="badge badge-light">{{ .Params.category }}</a>
+                </div>
+                <div class="blog-grid-cards-body">
+                    <h2><a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h2>
+                </div>
             </div>
-        </section>
+            
+            {{ end }}
+        {{ end }}
+
     </div>
 
 
-    <article class="bg-orange center cf f3 fw7 lh-copy mid-gray ph3 ph5-l pv3 pv4-l tc-l">
-        <p class="white ml-auto mr-auto w-75 white">Talisman Toolkit is for teachers and tinkerers, community organizers
-            and collectives who are aiming
-            to foster a more inclusive environment for their participants.</p>
-    </article>
+    <section class="blog-category mt-5">
+        <div class="text-center mb-5">
+            <h2>New and Noteworthy</h2>
+            <p style="max-width: 680px; margin: 0 auto">
+                Get to know the latest features that have been released into Mailmeteor, to help you do more with your
+                emails.
+                <a href="#">Read all our product announcements →</a>
+            </p>
+        </div>
+        <div>
+            <ul class="blog-feed">
 
+                {{ $newsPosts := where .Site.RegularPages "Params.category" "news" | first 5 }}
+                {{ $count := 0 }}
 
-    <div class="pa3 pa4-ns w-100 w-75-ns center aims_wrap">
-        <h1 class="flex-none orange fw7">
-            Aims
-        </h1>
-        <p class="f6 f5-l lh-copy nested-copy-line-height nested-links dark-gray">By pushing co-design from a model
-            where materials are traditionally imposed on participants to one where
-            participants have greater control over their materials, your participants will be more empowered to:
+                {{ range $newsPosts }}
 
-        </p>
-        <section class="w-100 mt4 aims">
-            <div class="relative w-100 mb4">
-                <article class="b--black-10">
-                    <div class="db ph3 ph0-l no-underline dark-gray">
-                        <div class="flex flex-column justify-between items-center flex-row-ns">
-                            <div class="pr3-ns mb4 mb0-ns w-100 w-50-ns">
-                                <img src="https://rizi97.github.io/hugo-talisman/assets/images/aims.jpg" class="img"
-                                    alt="image from Chapter VI: Esmeralda">
-                            </div>
+                    <li>
+                        {{ if eq $count 0 }}
+                        <a href="{{ .Permalink }}" style="display: block; margin-bottom: 24px">
+                            <img loading="lazy" class="w-100 border-radius-lg"
+                                src="{{ .Params.thumbnail }}"
+                                alt="Mailmeteor meets Outlook" />
+                        </a>
+                        {{ end }}
 
-                            <div class="blah w-100 w-50-ns">
-                                <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-                                    <ol>
-                                        <li>Enact aspects of their <b>identities and lived experiences</b> in co-design
-                                        </li>
-                                        <li>Feel more in <b>control</b> over the design process and their
-                                            decision-making</li>
-                                        <li><b>Draw connections</b> between the design topic and their personal lives
-                                        </li>
-                                        <li>See the <b>design potential</b> in everyday objects, whether tangible or
-                                            intangible, as design material</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </div>
+                        <h3>
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        </h3>
+                        <div>{{ .Params.excerpt }}</div>
+                    </li>
 
-
-    <div class="center pa3 pa4-ns pt0-l w-100 w-75-ns gains_wrap">
-        <h1 class="flex-none orange fw7 mt0">
-            Gains
-        </h1>
-        <p class="f6 f5-l lh-copy nested-copy-line-height nested-links dark-gray">Past participants who have used
-            Talisman have made the following gains through their participation:
-        </p>
-        <section class="w-100 mt4 gains">
-            <div class="relative w-100 mb4">
-                <article class="b--black-10">
-                    <div class="db ph3 ph0-l no-underline dark-gray">
-                        <div class="flex flex-column justify-between items-center flex-row-ns">
-                            <div class="pr3-ns mb4 mb0-ns w-100 w-50-ns">
-                                <img src="https://rizi97.github.io/hugo-talisman/assets/images/gains.jpg" class="img"
-                                    alt="image from Chapter VI: Esmeralda">
-                            </div>
-
-                            <div class="blah w-100 w-50-ns">
-                                <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-                                    <ol>
-                                        <li>Concrete <b>ideas and solutions</b> that relate to participants’ and
-                                            communities’ design questions
-                                        </li>
-                                        <li>Design and <b>process knowledge</b> that participants can take back into
-                                            their communities</li>
-                                        <li>Greater sense of <b>individual belonging</b> and feelings of being both seen
-                                            and heard
-                                        </li>
-                                        <li>Increased sense of <b>group cohesion</b> and team-building</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </div>
-
-
-
-    <article class="bg-light-blue center cf f3 fw7 lh-copy mid-gray ph3 ph5-l pv3 pv4-l tc-l">
-        <p class="white ml-auto mr-auto w-75 white">By using this toolkit, your participants will be empowered to bring
-            their own materials into design sessions to make the design topic uniquely their own.</p>
-    </article>
+                    {{ $count = add $count 1 }}
+                {{ end }}
+            </ul>
+        </div>
+    </section>
 
 </main>
 {{ end }}

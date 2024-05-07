@@ -1,6 +1,6 @@
-baseURL = 'https://rizi97.github.io/hugo-talisman/'
+baseURL = '/'
 languageCode = 'en'
-title = 'Talisman'
+title = 'Dictanote'
 
 [menu]
 [[menu.main_menu]]
@@ -9,81 +9,68 @@ title = 'Talisman'
   url = '/'
   weight = '1'
 [[menu.main_menu]]
-  identifier = 'about'
-  name = 'About'
-  url = '#!'
+  identifier = 'news'
+  name = 'News'
+  url = '/news'
   weight = '2'
-  [[menu.main_menu]]
-    parent = 'about'
-    name = 'Toolkit Purpose'
-    url = '/about/#what-is-the-purpose-of-this-toolkit'
-    weight = '1'
-  [[menu.main_menu]]
-    parent = 'about'
-    name = 'Who is this toolkit for'
-    url = '/about/#who-is-this-toolkit-for'
-    weight = '2'
-  [[menu.main_menu]]
-    parent = 'about'
-    name = 'When should I use Talisman'
-    url = '/about/#when-should-i-use-talisman'
-    weight = '3'
-  [[menu.main_menu]]
-    parent = 'about'
-    name = 'Where can Talisman be used'
-    url = '/about/#where-can-talisman-be-used'
-    weight = '4'
-  [[menu.main_menu]]
-    parent = 'about'
-    name = 'Why Talisman'
-    url = '/about/#why-talisman'
-    weight = '5'
-  [[menu.main_menu]]
-    parent = 'about'
-    name = 'How can I make the most of Talisman'
-    url = '/about/#how-can-i-make-the-most-of-talisman'
-    weight = '6'
 [[menu.main_menu]]
-  identifier = 'resources'
-  name = 'Resources'
-  url = '#!'
+  identifier = 'tutorial'
+  name = 'Tutorials'
+  url = '/tutorial'
   weight = '3'
-  [[menu.main_menu]]
-    parent = 'resources'
-    name = "Overview"
-    url = '/resources/#overview'
-    weight = '1'
-  [[menu.main_menu]]
-    parent = 'resources'
-    name = "Prompt"
-    url = '/resources/#prompt'
-    weight = '2'
-  [[menu.main_menu]]
-    parent = 'resources'
-    name = "Design Activities"
-    url = '/resources/#design-activities'
-    weight = '3'
-  [[menu.main_menu]]
-    parent = 'resources'
-    name = "Padlet Template"
-    url = '/resources/#padlet-template'
-    weight = '4'
-  [[menu.main_menu]]
-    parent = 'resources'
-    name = "Further Reading"
-    url = '/resources/#further-reading'
-    weight = '5'
 [[menu.main_menu]]
-  identifier = 'sample-use'
-  name = 'Sample Use'
-  url = '/sample-use'
+  identifier = 'comparison'
+  name = 'Comparison'
+  url = '/comparison'
   weight = '4'
-[[menu.main_menu]]
-  identifier = 'contact'
-  name = 'Contact'
-  url = '/contact'
-  weight = '5'
 
+[[menu.footer_product]]
+  name = 'Getting Started with Voice In'
+  url = '#'
+  weight = '1'
+[[menu.footer_product]]
+  name = 'Pricing'
+  url = '#'
+  weight = '2'
+[[menu.footer_product]]
+  name = 'Partners'
+  url = '#'
+  weight = '3'
+
+[[menu.footer_resources]]
+  name = 'Voice Commands'
+  url = '#'
+  weight = '1'
+[[menu.footer_resources]]
+  name = 'Demo video'
+  url = '#'
+  weight = '2'
+[[menu.footer_resources]]
+  name = 'Cancellation Policy'
+  url = '#'
+  weight = '3'
+
+[[menu.footer_support]]
+  name = 'Help center'
+  url = '#'
+  weight = '1'
+[[menu.footer_support]]
+  name = 'User forum'
+  url = '#'
+  weight = '2'
+[[menu.footer_support]]
+  name = 'Email'
+  url = '#'
+  weight = '3'
+
+[[menu.footer_bottom]]
+  name = 'Terms'
+  url = '#'
+  weight = '1'
+[[menu.footer_bottom]]
+  name = 'Privacy Policy'
+  url = '#'
+  weight = '2'
 
 [Params]
-siteLogo = "https://rizi97.github.io/hugo-talisman/assets/images/logo.png"
+siteLogo = "/assets/img/logo.png"

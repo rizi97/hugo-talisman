@@ -1,34 +1,43 @@
-<header class="cover bg-top"
-   style="background-image: url('https://rizi97.github.io/hugo-talisman/assets/images/bg-hero.jpg');">
-   <div>
-      <div class="flex justify-between items-center pa5 pb3 pt3" id="custom_navigation">
-         <a href="{{.Site.BaseURL}}" class="header-logo">
-            <img src="{{site.Params.siteLogo}}" />
+<header class="blog-header">
+   <nav class="navbar navbar-expand-lg mm-main-navbar" id="navbar">
+      <div class="container">
+         <a href="{{.Site.BaseURL}}" class="navbar-brand"><img alt="{{site.Title}} logo" itemprop="logo" width="45"
+               height="45" src="{{site.Params.siteLogo}}" />
+               <span id="brand-name">{{site.Title}}</span>
          </a>
-         <nav>
-            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-            <ul class="nav-list">
+         <button class="navbar-toggler collapsed btn" type="button" data-toggle="collapse" data-target="#navbarTabs"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarTabs">
+            <ul class="navbar-nav ml-auto smooth-scroll">
                {{ range .Site.Menus.main_menu }}
-               <li class="{{ if eq .Identifier $.Page.Params.menu.main_menu.identifier }} active{{ end }}">
-                  <a href="{{ .URL }} ">{{ .Name }}</a>
-                  {{ if .HasChildren }}
-                  <ul class="nav-dropdown">
-                     {{ range .Children }}
-                     <li>
-                        <a href="{{ .URL }}">{{ .Name }}</a>
-                     </li>
-                     {{ end }}
-                  </ul>
-                  {{ end }}
-               </li>
+                  <li class="{{ if eq .Identifier $.Page.Params.menu.main_menu.identifier }} active{{ end }} nav-item">
+                     <a class="nav-link text-white" href="{{ .URL }} ">{{ .Name }}</a>
+                  </li>
                {{ end }}
             </ul>
-         </nav>
+         </div>
       </div>
+   </nav>
 
-      {{ if eq $.Page.Params.menu.main_menu.identifier "home" }}
-      {{ partial "hero-banner" . }}
-      {{ end }}
+   {{ if .IsHome }}
 
-   </div>
+      {{ partial "home-banner.html" . }}
+      
+      {{ partial "home-banner-posts.html" . }}
+   
+   {{ else if and .IsPage (eq .Type "blog") }}
+
+      {{ partial "single-banner.html" . }}
+
+   {{ else }}
+
+      {{ partial "category-banner.html" . }}
+
+   {{ end }}
+
+
 </header>
